@@ -67,7 +67,7 @@ namespace SF22ASWT
         bool ReadSampleDataFromFile(instrument_data_temp &inst, bool forceUseInternalRam = false);
 
       protected:
-        ReaderBase() {}
+        ReaderBase() : samples{nullptr} {}
         ~ReaderBase() {}
 
         void clearErrors();
